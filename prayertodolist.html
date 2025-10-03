@@ -1,20 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PRAYER TOO DO LIST</title>
-    <link rel="stylesheet" href="prayertodolist.css">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>PRAYER TO DO LIST</title>
+       <link rel="stylesheet" href="prayertodolist.css">
   </head>
   <body>
     <div class="all">
-    <header> 
-      <h1>🕌PRAYERS TO DO LIST🕌</h1>
+       <header> 
+           <h1>🕌PRAYERS TO DO LIST🕌</h1>
+           <button class="btn">LOGIN</button>
     </header>
     <p class="link">
       <span class="linktext"><a href="#home" class="a">HOME</a></span>
-       <span class="linktext"><a href="#prayer" class="a">PRAYER TRACKER</a></span>
+       <span class="linktext"><a href="#prayer" class="a"> FARD SELAT TRACKER</a></span>
+       <span class="linktext"><a href="#sunnahprayer" class="a">SUNNAH SELAT TRACKER</a></span>
+       <span class="linktext"><a href="#tahajjud" class="a">TAHAJJUD SELAT TRACKER</a></span>
        <span class="linktext"><a href="#calander" class="a">ISLAMIC CALENDER</a></span>
        <span class="linktext"><a href="#zikir" class="a">ZIKIR</a></span>
+       <span class="linktext"><a href="#qibla" class="a">QIBLA DIRECTION</a></span>
+       <span class="linktext"><a href="#ramadan" class="a">RAMADAN</a></span>
        <span class="linktext"><a href="#setting" class="a">SETTING</a></span>
     </p>
     <h1><span class="image">🌙</span> Welcome to Your Islamic Prayer & Zikir Tracker! 🕌</h1>
@@ -30,51 +35,75 @@
   </div>
   <div id="prayer" >
    <h2>PRAYER TRAKER</h2>
-   <label class="p"><input type="checkbox" name="tracker">Fajr</label>
+   <label class="p" ><input type="checkbox" name="tracker">Fajr</label>
    <label class="p"><input type="checkbox" name="tracker">Dhuhr</label>
    <label class="p"><input type="checkbox" name="tracker">Asr</label>
    <label class="p"><input type="checkbox" name="tracker">Magrib</label>
    <label class="p"><input type="checkbox" name="tracker">Isha</label>
   </div>
+  <div id="sunnahprayer" >
+   <h2> SUNNAH SELAT PRAYER TRACKER</h2>
+   <label class="p" ><input type="checkbox" name="tracker">Fajr sunnah</label>
+   <label class="p"><input type="checkbox" name="tracker">Dhuhr sunnah</label>
+   <label class="p"><input type="checkbox" name="tracker">Magrib sunnah</label>
+   <label class="p"><input type="checkbox" name="tracker">Isha sunnah</label>
+  </div>
+  <div id="tahajjud">
+  <h3 class="h3z">TAHAJJUD SELAT TRACKER</h3>
+    <label for=""id="tecounter">0</label><br><br>
+       <section class="buttons">
+      <button id="tedecrease" class="button">Decrease</button>
+      <button id="tereset" class="button">Reset</button>
+       <button id="teincrease" class="button">Increase</button></ul></section>
+       <p id="tecountertext"></p></div>
   <div id="calander" >
-    <label> Arebic calander<input type="date"></label><input type="date">
+    <label> Arabic calander<input type="date"></label><input type="date">
   </div>
   <div id="zikir" >
    <ul>
     <h2>ZIKIR</h2>
+    <h3 class="h3z">zikir counter</h3>
+    <label for=""id="counter">0</label><br><br>
+       <section class="buttons">
+        <button id="decrease" class="button">Decrease</button>
+       <button id="reset" class="button">Reset</button>
+       <button id="increase" class="button">Increase</button></ul></section>
+       <p id="countertext"></p>
+
     <li>
       <label><input type="checkbox" name="zikir">Morning Zikir</label>
       <ul>
-        <li><label><input type="checkbox" name="zikir">Ayatel krsi</label></li>
-        <li><label><input type="checkbox" name="zikir">Suretul iklas</label></li>
-        <li><label><input type="checkbox" name="zikir">Suretul Felek</label></li>
+        <li><label><input type="checkbox" name="zikir">Ayatel Kursi</label></li>
+       
+        <li><label><input type="checkbox" name="zikir">Suretul Ikhlas</label></li>
+        <li><label><input type="checkbox" name="zikir">Suretul Falaq</label></li>
         <li><label><input type="checkbox" name="zikir">Suretul Nas</label></li>
       </ul>
     </li>
     <li>
   <label><input type="checkbox" name="zikir">Evening Zikir</label>
   <ul>
-        <li><label><input type="checkbox" name="zikir">Ayatel krsi</label></li>
-        <li><label><input type="checkbox" name="zikir">Suretul iklas</label></li>
-        <li><label><input type="checkbox" name="zikir">Suretul Felek</label></li>
+        <li><label><input type="checkbox" name="zikir">Ayatel Kursi</label></li>
+        <li><label><input type="checkbox" name="zikir">Suretul Ikhlas</label></li>
+        <li><label><input type="checkbox" name="zikir">Suretul Falaq</label></li>
         <li><label><input type="checkbox" name="zikir">Suretul Mulk</label></li>
       </ul>
       </li>
       <li>
       <label><input type="checkbox" name="zikir">After prayer Zikir</label>
   <ul>
-        <li><label><input type="checkbox" name="zikir">subhanallah--33 </label></li>
-        <li><label><input type="checkbox" name="zikir">Alhamdulilah--33</label></li>
-        <li><label><input type="checkbox" name="zikir">AllahAkber--33</label></li>
-        <li><label><input type="checkbox" name="zikir">last ayah in Suretul Baqarah</label></li>
+        <li><label><input type="checkbox" name="zikir">SubhanAllah--33 </label></li>
+        <li><label><input type="checkbox" name="zikir">Alhamdulillah--33</label></li>
+        <li><label><input type="checkbox" name="zikir">Allahu Akbar--33</label></li>
+        <li><label><input type="checkbox" name="zikir">Last Ayah in Surah Al-Baqarah</label></li>
       </ul>
 </li>
 <li>
   <label><input type="checkbox" name="zikir">special  Zikir</label>
   <ul>
-        <li><label><input type="checkbox" name="zikir">Lahawlewela kuwete illabilah</label></li>
-        <li><label><input type="checkbox" name="zikir">subhanallah webihamdihi</label></li>
-        <li><label><input type="checkbox" name="zikir">bismilahi alezi layeduru measmihi shey un fil ardi wela fisema e</label></li>
+        <li><label><input type="checkbox" name="zikir">La hawla wa la quwwata illa billah</label></li>
+        <li><label><input type="checkbox" name="zikir">SubhanAllahi wa bihamdihi</label></li>
+        <li><label><input type="checkbox" name="zikir">Bismillahi allathee la yadurru ma’asmihi shay’un fil-ardi wa la fis-sama’i</label></li>
         <li><label><input type="checkbox" name="zikir">Other zikirs you may know</label></li>
        <li><label><input type="checkbox" name="zikir">Other zikirs you may know</label></li>
         <li><label><input type="checkbox" name="zikir">Other zikirs you may know</label></li>
@@ -83,9 +112,22 @@
 </ul>
 </div>
 
-
+<div id="qibla">
+  <h2>🕋 QIBLA DIRECTION</h2>
+  <p>Face towards the <strong>Kaaba in Makkah</strong> when you pray.</p>
+  <p>🧭 Use a compass app on your phone or check the mosque for Qibla signs.</p>
+  <p>➡️ In Ethiopia (for example), Qibla is generally <strong>Northeast</strong>.</p>
+</div>
 
   </div>
+  <div id="ramadan">
+  <h2>RAMADAN SPIRITUAL TRACKER</h2>
+  <label><input type="checkbox" name="ramadan">Fasting ✅</label><br><br>
+  <label><input type="checkbox" name="ramadan">Read Qur'an today</label><br><br>
+  <label><input type="checkbox" name="ramadan">Give charity</label><br><br>
+  <label><input type="checkbox" name="ramadan">Tarawih prayer</label><br><br>
+  <label><input type="checkbox" name="ramadan">Dhikr / Du'a</label>
+</div>
   <div id="setting" >
     <h1 cass="sett">SETTING</h1>
     <DIV><p class="set">☎️contact</p>
@@ -98,7 +140,7 @@
 
     </DIV>
     <DIV><p class="set">👶age</p>
-    <label for="age">Choose your:</label>
+    <label for="age">Choose your age:</label>
 <select id="age" name="age">
   <option value="10-18">bellow 18</option>
   <option value="18-30">18-30</option>
@@ -121,5 +163,5 @@
   
   
   
-  
+  <script src="prayertodolist.js"></script>
   </div>
